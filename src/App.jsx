@@ -76,8 +76,13 @@ function App() {
         <footer className="relative z-10 w-full py-5 text-center bg-transparent mt-auto">
           <p className="text-zinc-300 dark:text-gray-400 font-medium text-sm tracking-wide">
             Developed by{' '}
-            <a href="https://github.com/deepanshu1420" target="_blank" rel="noopener noreferrer" className="text-blue-400 dark:text-blue-500 hover:text-blue-300 transition-colors duration-300 font-bold">
-              Deepanshu Sharma
+            <a 
+             href="https://github.com/deepanshu1420" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-white transition-colors duration-300 font-bold"
+            >
+             Deepanshu Sharma
             </a>
           </p>
         </footer>
