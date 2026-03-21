@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Loader2, Sparkles } from 'lucide-react';
 import { askStateQuestion } from '../services/gemini';
+import ReactMarkdown from 'react-markdown';
 
 const ChatBot = ({ stateName, language }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,6 @@ const ChatBot = ({ stateName, language }) => {
         setIsOpen(false);
       }
     };
-
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
@@ -53,9 +53,7 @@ const ChatBot = ({ stateName, language }) => {
   };
 
   return (
-    // FIX 1: Reduced margin on mobile (bottom-4 right-4) and added 'flex flex-col items-end' 
-    // to ensure the chat window perfectly aligns with the button on the right edge.
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end" ref={chatContainerRef}>
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[999] flex flex-col items-end" ref={chatContainerRef}>
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -63,8 +61,7 @@ const ChatBot = ({ stateName, language }) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-            // FIX 2: Made width fluid on mobile (calc(100vw - 2rem)) and height safe (75vh max)
-            className="mb-4 w-[calc(100vw-2rem)] sm:w-[380px] h-[75vh] max-h-[500px] flex flex-col overflow-hidden rounded-[2rem] bg-zinc-100/90 dark:bg-black/60 backdrop-blur-3xl border border-zinc-300 dark:border-white/20 shadow-2xl origin-bottom-right"
+            className="mb-4 w-[calc(100vw-2rem)] sm:w-[380px] h-[75vh] max-h-[500px] flex flex-col overflow-hidden rounded-[2rem] bg-zinc-100/90 dark:bg-black/80 backdrop-blur-3xl border border-zinc-300 dark:border-white/20 shadow-2xl origin-bottom-right"
           >
             {/* Header */}
             <div className="px-5 py-4 bg-zinc-200/80 dark:bg-white/10 border-b border-zinc-300 dark:border-white/10 flex justify-between items-center shrink-0">
@@ -87,17 +84,22 @@ const ChatBot = ({ stateName, language }) => {
             </div>
 
             {/* Messages Area */}
-            <div className="flex-grow p-4 sm:p-5 overflow-y-auto space-y-4">
+            <div className="flex-grow p-4 sm:p-5 overflow-y-auto space-y-4 custom-scrollbar">
               {messages.map((msg, idx) => (
                 <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   <div 
-                    className={`px-4 py-2.5 max-w-[90%] sm:max-w-[85%] rounded-2xl text-[14px] sm:text-[15px] leading-relaxed font-medium shadow-sm ${
+                    className={`px-4 py-2.5 max-w-[90%] sm:max-w-[85%] rounded-2xl text-[14px] sm:text-[15px] leading-relaxed shadow-sm ${
                       msg.role === 'user' 
-                        ? 'bg-blue-600 text-white rounded-tr-sm' 
+                        ? 'bg-blue-600 text-white rounded-tr-sm font-medium' 
                         : 'bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-700 rounded-tl-sm'
                     }`}
                   >
-                    {msg.text}
+                    {/* Updated Markdown Rendering */}
+                    <div className="prose prose-sm dark:prose-invert max-w-none">
+                      <ReactMarkdown>
+                        {msg.text}
+                      </ReactMarkdown>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -135,7 +137,6 @@ const ChatBot = ({ stateName, language }) => {
         )}
       </AnimatePresence>
 
-      {/* Floating Toggle Button */}
       <motion.button
         whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(59, 130, 246, 0.5)" }}
         whileTap={{ scale: 0.95 }}
