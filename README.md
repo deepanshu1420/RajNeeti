@@ -99,20 +99,30 @@ RajNeeti:
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
+```bash
 git clone https://github.com/deepanshu1420/RajNeeti.git
-`cd RajNeeti`
+cd RajNeeti
+```
 
 ### 2. Install Dependencies
-`npm install`
+```bash
+npm install
+```
 
 ### 3. Environment Variables
+```bash
 Create a .env file & Add: 
-`VITE_GEMINI_API_KEY=your_gemini_api_key`
-`VITE_CHATBOT_API_KEY=your_pixabay_api_key`
+VITE_GEMINI_API_KEY=your_gemini_api_key
+VITE_CHATBOT_API_KEY=your_pixabay_api_key
+```
 
 ### 4. Run Project     
-`npm run dev`
+```bash
+npm run dev
+```
 
 ### 5. Open in Browser
+```bash
 http://localhost:5173
+```
 
