@@ -34,10 +34,9 @@ RajNeeti is not just a dashboard — it’s a **state-aware AI ecosystem**.
 - 🛡️ **Contextual Guardrails**  
   AI is restricted to civic topics only, preventing irrelevant or misleading responses.
 
-- 🌐 **Bilingual Simplicity (EN + Simple Hindi)**  
-  Content is generated in extremely simple language for mass accessibility.
-
----
+- 🌐 **Bilingual Simplicity (EN ⇄ Hindi)**  
+  Content is generated in simple English and easy Hindi for maximum accessibility.  
+  We also support **English ↔ Hindi translation**, allowing users to seamlessly switch and understand information in their preferred language.
 
 ## ✨ Features Breakdown
 
@@ -59,8 +58,6 @@ RajNeeti is not just a dashboard — it’s a **state-aware AI ecosystem**.
 - 📱 **Fully Responsive Experience**  
   Works seamlessly across mobile, tablet, and desktop.
 
----
-
 ## ✅ Advantages
 
 - ⚡ **Fast & AI-driven insights**
@@ -68,8 +65,6 @@ RajNeeti is not just a dashboard — it’s a **state-aware AI ecosystem**.
 - 🧠 **Easy to understand for any age group**
 - 🎯 **Focused, distraction-free information**
 - 🌙 **Dark mode optimized UI**
-
----
 
 ## 🧩 Problem This Project Solves
 
@@ -87,37 +82,36 @@ RajNeeti:
 
 👉 Understand any state in **under 60 seconds**
 
----
-
 ## 🛠️ Tech Stack & Tools
 
 - **Frontend:** React + Vite  
 - **Styling:** Tailwind CSS  
 - **Animations:** Framer Motion  
-- **AI Engine:** Google Gemini (Flash model)   
+- **AI Engine:** Google Gemini (Flash model)  
+- **Routing:** React Router DOM (v7.2.0)  
+- **Markdown Rendering:** React Markdown  
 - **Icons:** Lucide React  
+- **State & Storage:** Local Storage API (browser-native storage for persisting data)  
+- **CSS Tooling:** Autoprefixer & PostCSS (ensure Tailwind works across all modern browsers)  
+- **Code Quality:** ESLint (for identifying and fixing issues in JS/JSX code)  
 - **Deployment:** Vercel  
-
----
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
-```bash
 git clone https://github.com/deepanshu1420/RajNeeti.git
-cd RajNeeti
+`cd RajNeeti`
 
 ### 2. Install Dependencies
-```bash
-npm install
+`npm install`
 
 ### 3. Environment Variables
-Create a .env file: 
-add: VITE_GEMINI_API_KEY=your_gemini_api_key
-     VITE_CHATBOT_API_KEY=your_pixabay_api_key
+Create a .env file & Add: 
+`VITE_GEMINI_API_KEY=your_gemini_api_key`
+`VITE_CHATBOT_API_KEY=your_pixabay_api_key`
 
 ### 4. Run Project     
-npm run dev
+`npm run dev`
 
 ### 5. Open in Browser
 http://localhost:5173
