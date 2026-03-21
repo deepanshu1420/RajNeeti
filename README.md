@@ -1,4 +1,4 @@
-# 🏛️ RajNeeti — RajNeeti samjho, desh ko pehchano.
+# 🏛️ RajNeeti - RajNeeti samjho, desh ko pehchano.
 
 > **"Civic Intelligence Dashboard"**
 
