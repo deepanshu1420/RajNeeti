@@ -110,8 +110,8 @@ npm install
 ```
 
 ### 3. Environment Variables
+Create a `.env` file & Add: 
 ```bash
-Create a .env file & Add: 
 VITE_GEMINI_API_KEY=your_gemini_api_key
 VITE_CHATBOT_API_KEY=your_pixabay_api_key
 ```
