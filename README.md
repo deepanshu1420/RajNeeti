@@ -1,14 +1,14 @@
 # 🏛️ RajNeeti - Civic Intelligence Dashboard
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000000)
-![Vite](https://img.shields.io/badge/Vite-FFD62E?style=for-the-badge&logo=vite&logoColor=000000)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=000000)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-FF4C9F?style=for-the-badge&logo=framer&logoColor=ffffff)
-![Gemini AI](https://img.shields.io/badge/Gemini_AI-8E75B2?style=for-the-badge&logo=google&logoColor=ffffff)
-![Lucide React](https://img.shields.io/badge/Lucide_React-00C2FF?style=for-the-badge&logo=lucide&logoColor=000000)
-![React Markdown](https://img.shields.io/badge/React_Markdown-FF8C42?style=for-the-badge&logo=markdown&logoColor=ffffff)
-![Local Storage API](https://img.shields.io/badge/Local_Storage-4CAF50?style=for-the-badge&logo=googlechrome&logoColor=ffffff)
-![Vercel](https://img.shields.io/badge/Vercel-F5F5F5?style=for-the-badge&logo=vercel&logoColor=000000)
+![React](https://img.shields.io/badge/React-1E293B?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-2B2D42?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-1F2937?style=for-the-badge&logo=framer&logoColor=FF4C9F)
+![Gemini AI](https://img.shields.io/badge/Gemini_AI-312E81?style=for-the-badge&logo=google&logoColor=A78BFA)
+![Lucide React](https://img.shields.io/badge/Lucide_React-0F172A?style=for-the-badge&logo=lucide&logoColor=38BDF8)
+![React Markdown](https://img.shields.io/badge/React_Markdown-1F2937?style=for-the-badge&logo=markdown&logoColor=F97316)
+![Local Storage API](https://img.shields.io/badge/Local_Storage-14532D?style=for-the-badge&logo=googlechrome&logoColor=4ADE80)
+![Vercel](https://img.shields.io/badge/Vercel-111827?style=for-the-badge&logo=vercel&logoColor=ffffff)
 
 > **RajNeeti samjho, desh ko pehchano.**
 
