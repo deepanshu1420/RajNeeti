@@ -1,13 +1,4 @@
-# 🏛️ RajNeeti - RajNeeti samjho, desh ko pehchano.
-
-> **"Civic Intelligence Dashboard"**
-
-RajNeeti is an AI-powered civic intelligence platform designed to simplify how people understand Indian states, politics, and real-world issues.  
-It transforms complex, scattered information into clean, structured, and easy-to-digest insights using modern UI and intelligent AI pipelines.
-
----
-
-## 🛠️ Tech & Skills
+# 🏛️ RajNeeti - Civic Intelligence Dashboard
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -17,7 +8,12 @@ It transforms complex, scattered information into clean, structured, and easy-to
 ![Pixabay API](https://img.shields.io/badge/Pixabay-2EC66D?style=for-the-badge)
 ![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel)
 
----
+> **RajNeeti samjho, desh ko pehchano.**
+
+- RajNeeti is an AI-powered civic intelligence platform designed to simplify how people understand Indian states, 
+  politics, and real-world issues.  
+- It transforms complex, scattered information into clean, structured, and easy-to-digest insights using modern UI 
+  and intelligent AI pipelines.
 
 ## 🚀 Unique Features
 
@@ -94,7 +90,7 @@ RajNeeti:
 
 ---
 
-## 💻 Tech Stack
+## 🛠️ Tech Stack & Tools
 
 - **Frontend:** React + Vite  
 - **Styling:** Tailwind CSS  
