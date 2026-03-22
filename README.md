@@ -4,7 +4,7 @@
 ![Vite](https://img.shields.io/badge/Vite-2B2D42?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-1F2937?style=for-the-badge&logo=framer&logoColor=FF4C9F)
-![Gemini API](https://img.shields.io/badge/Gemini_AI-312E81?style=for-the-badge&logo=google&logoColor=A78BFA)
+![Google Gemini API](https://img.shields.io/badge/Google_Gemini_API-312E81?style=for-the-badge&logo=google&logoColor=A78BFA)
 ![Lucide React](https://img.shields.io/badge/Lucide_React-0F172A?style=for-the-badge&logo=lucide&logoColor=38BDF8)
 ![React Markdown](https://img.shields.io/badge/React_Markdown-1F2937?style=for-the-badge&logo=markdown&logoColor=F97316)
 ![Local Storage API](https://img.shields.io/badge/Local_Storage-14532D?style=for-the-badge&logo=googlechrome&logoColor=4ADE80)
