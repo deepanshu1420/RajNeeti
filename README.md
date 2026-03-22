@@ -94,17 +94,17 @@ RajNeeti:
 
 ### 📊 State Insights Dashboard
 ![Dashboard English](./screenshots/dashboard1.png)  
-*View structured insights including issues, politics, crime, and developments.*
+*English Dashboard - View structured insights including issues, politics, crime, and developments.*
 
 ![Dashboard Hindi](./screenshots/dashboard2.png)  
-*मुद्दों, राजनीति, अपराध और विकास से जुड़ी जानकारी को संरचित रूप में देखें।*
+*Hindi Dashboard - मुद्दों, राजनीति, अपराध और विकास से जुड़ी जानकारी को संरचित रूप में देखें।*
 
 ### 🤖 AI Chat Assistant
 ![Chatbot English](./screenshots/chatbot1.png)  
-*Interact with the AI assistant to get real-time civic insights in English.*
+*Chatbot in English - Interact with the AI assistant to get real-time civic insights in English.*
 
 ![Chatbot Hindi](./screenshots/chatbot2.png)  
-*AI चैटबॉट से हिंदी में जानकारी प्राप्त करें और अपने राज्य को बेहतर समझें।*
+*Chatbot in Hindi - AI चैटबॉट से हिंदी में जानकारी प्राप्त करें और अपने राज्य को बेहतर समझें।*
 
 ### 🌙 Dark Mode UI
 ![Dark Mode](./screenshots/lightMode.png)  
