@@ -17,6 +17,8 @@
 - It transforms complex, scattered information into clean, structured, and easy-to-digest insights using modern UI 
   and intelligent AI pipelines.
 
+🌐 Live Demo : [View Live](https://rajneeti.vercel.app/)  
+
 ## 🚀 Unique Features
 
 ### 🧠 Civic Intelligence Engine
