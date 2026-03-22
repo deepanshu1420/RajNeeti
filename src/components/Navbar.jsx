@@ -17,7 +17,7 @@ const Navbar = ({ darkMode, setDarkMode, language, setLanguage }) => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-sm sm:text-lg md:text-xl font-extrabold text-zinc-100 dark:text-blue-400 tracking-tight drop-shadow-sm leading-tight max-w-[60%] sm:max-w-full"
+          className="text-xs sm:text-base md:text-xl font-extrabold text-zinc-100 dark:text-blue-400 tracking-tight drop-shadow-sm leading-tight max-w-[55%] sm:max-w-full"
         >
           RajNeeti samjho, desh ko pehchano.
         </Link>
