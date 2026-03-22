@@ -106,8 +106,8 @@ RajNeeti:
 ![Chatbot Hindi](./screenshots/chatbot2.png)  
 *Chatbot in Hindi - AI चैटबॉट से हिंदी में जानकारी प्राप्त करें और अपने राज्य को बेहतर समझें।*
 
-### 🌙 Dark Mode UI
-![Dark Mode](./screenshots/lightMode.png)  
+### 🔆 Light Mode UI
+![Light Mode](./screenshots/lightMode.png)  
 *Experience a visually appealing light theme for better readability.*
 
 ### 📱 Responsive Design
