@@ -11,13 +11,31 @@ import bg4 from './assets/bg4.jpg';
 const bgImages = [bg1, bg2, bg3, bg4];
 
 const BackgroundSlider = memo(({ darkMode }) => {
-  const [bgIndex, setBgIndex] = useState(0);
+  // State to check if the screen is mobile sized (under 768px)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
+  // Set the default image to bg2 (index 1) for mobile, and bg1 (index 0) for larger screens
+  const [bgIndex, setBgIndex] = useState(isMobile ? 1 : 0);
+
+  // Effect to handle window resizing
   useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    // If it's a mobile screen, lock to index 1 (bg2) and don't set the interval
+    if (isMobile) {
+      setBgIndex(1);
+      return;
+    }
+
     const timer = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % bgImages.length);
     }, 6000); 
     return () => clearInterval(timer);
-  }, []);
+  }, [isMobile]); // Re-run this effect if the screen size crosses the mobile breakpoint
 
   return (
     <div className="fixed inset-0 z-[-1] bg-black">
