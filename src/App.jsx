@@ -7,15 +7,16 @@ import bg1 from './assets/bg1.jpg';
 import bg2 from './assets/bg2.jpg';
 import bg3 from './assets/bg3.jpg';
 import bg4 from './assets/bg4.jpg';
+import bg2Mobile from './assets/bg2-mobile.jpg'; // NEW: Imported the mobile-specific image
 
-const bgImages = [bg1, bg2, bg3, bg4];
+const bgImagesDesktop = [bg1, bg2, bg3, bg4];
 
 const BackgroundSlider = memo(({ darkMode }) => {
   // State to check if the screen is mobile sized (under 768px)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   
-  // Set the default image to bg2 (index 1) for mobile, and bg1 (index 0) for larger screens
-  const [bgIndex, setBgIndex] = useState(isMobile ? 1 : 0);
+  // Set the default image to 0 for larger screens
+  const [bgIndex, setBgIndex] = useState(0);
 
   // Effect to handle window resizing
   useEffect(() => {
@@ -25,30 +26,39 @@ const BackgroundSlider = memo(({ darkMode }) => {
   }, []);
 
   useEffect(() => {
-    // If it's a mobile screen, lock to index 1 (bg2) and don't set the interval
+    // If it's a mobile screen, stop here. No timer needed.
     if (isMobile) {
-      setBgIndex(1);
       return;
     }
 
     const timer = setInterval(() => {
-      setBgIndex((prev) => (prev + 1) % bgImages.length);
+      setBgIndex((prev) => (prev + 1) % bgImagesDesktop.length);
     }, 6000); 
     return () => clearInterval(timer);
   }, [isMobile]); // Re-run this effect if the screen size crosses the mobile breakpoint
 
   return (
     <div className="fixed inset-0 z-[-1] bg-black">
-      {bgImages.map((imgSrc, index) => (
+      {isMobile ? (
+        // MOBILE: Render only the single, optimized mobile image
         <img
-          key={index}
-          src={imgSrc}
-          className={`absolute inset-0 w-full h-full object-cover blur-sm scale-105 transition-opacity duration-[2500ms] ease-in-out ${
-            bgIndex === index ? 'opacity-100' : 'opacity-0'
-          }`}
+          src={bg2Mobile}
+          className="absolute inset-0 w-full h-full object-cover blur-sm scale-105 opacity-100"
           alt="Government Background"
         />
-      ))}
+      ) : (
+        // DESKTOP: Map through and render the slider images
+        bgImagesDesktop.map((imgSrc, index) => (
+          <img
+            key={index}
+            src={imgSrc}
+            className={`absolute inset-0 w-full h-full object-cover blur-sm scale-105 transition-opacity duration-[2500ms] ease-in-out ${
+              bgIndex === index ? 'opacity-100' : 'opacity-0'
+            }`}
+            alt="Government Background"
+          />
+        ))
+      )}
       <div className={`absolute inset-0 transition-colors duration-700 ${darkMode ? 'bg-black/80' : 'bg-black/40 backdrop-blur-[2px]'}`} />
     </div>
   );
