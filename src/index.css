@@ -7,8 +7,9 @@
 @layer base {
   html, body {
     font-family: 'Poppins', sans-serif !important;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  
+    background-color: #000;             /* ADDED: Crucial for hiding any bottom white gaps */
+    overscroll-behavior-y: none;        /* Optional: Stops the elastic bounce effect entirely on mobile */
+    -ms-overflow-style: none;           /* Hide scrollbar for IE, Edge and Firefox */
     scrollbar-width: none;  
   }
   

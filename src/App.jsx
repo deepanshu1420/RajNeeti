@@ -38,7 +38,7 @@ const BackgroundSlider = memo(({ darkMode }) => {
   }, [isMobile]); // Re-run this effect if the screen size crosses the mobile breakpoint
 
   return (
-    <div className="fixed inset-0 z-[-1] bg-black">
+    <div className="fixed top-0 left-0 w-full h-[100lvh] z-0 bg-black">
       {isMobile ? (
         // MOBILE: Render only the single, optimized mobile image
         <img
@@ -84,7 +84,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen font-sans relative overflow-x-hidden text-zinc-100 flex flex-col">
+    <div className="min-h-[100dvh] font-sans relative overflow-x-hidden text-zinc-100 flex flex-col">
       <BackgroundSlider darkMode={darkMode} />
       <Router>
         {/* Passed language props down to Navbar */}
